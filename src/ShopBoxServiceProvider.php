@@ -33,7 +33,7 @@ class ShopBoxServiceProvider extends ServiceProvider
 
 
         
-        $this->loadViewsFrom(base_path(Config('shopbox.shopbox_admin_view_dir')), 'laracle');
+        $this->loadViewsFrom(Config('shopbox.shopbox_admin_view_dir'), 'laracle');
         $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
