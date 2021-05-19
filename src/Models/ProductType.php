@@ -1,0 +1,13 @@
+<?php
+
+namespace Laracle\ShopBox\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class ProductType extends Model
+{
+    use HasFactory;
+
+      protected $guarded = [];
+}

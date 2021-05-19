@@ -1,0 +1,46 @@
+{
+    "name": "laracle/shopbox",
+    "description": ":package_description",
+    "license": "MIT",
+    "repositories": [
+      {
+      "type" : "vcs",
+      "url": "https://github.com/meilisearch/meilisearch-php.git"
+      }
+    ],
+    "authors": [
+        {
+            "name": "Aaron Lumsden",
+            "email": "aaron@laracle.com",
+            "homepage": "https://laracle.com"
+        }
+    ],
+    "homepage": "https://github.com/laracle/shopbox",
+    "keywords": ["Laravel", "ShopBox","Shop","Ecommerce","E-commerce"],
+    "require": {
+        "illuminate/support": "~8",
+        "intervention/image": "^2.5",
+        "stripe/stripe-php": "^7.72"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0|~9.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4|~5|~6",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laracle\\ShopBox\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laracle\\ShopBox\\ShopBoxServiceProvider"
+            ],
+            "aliases": {
+                "ShopBox": "Laracle\\ShopBox\\Facades\\ShopBox"
+            }
+        }
+    }
+}
